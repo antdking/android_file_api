@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}bootstrap template page{% endblock %}</title>
+    <link href={% block bootstrap_css %}"//bootswatch.com/readable/bootstrap.min.css"{% endblock %} rel="stylesheet" media="screen">
+
+    {% block extra_head %}{% endblock %}
+</head>
+<body class="container-fluid">
+{% block pre_content %}{% endblock %}
+{% block content %}{% endblock %}
+{% block boot_javascripts %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="/static/js/general.js"></script>
+    <script>
+    sessionStorage.removeItem("androMan_main_data");
+    </script>
+{% endblock %}
+{% block post_javascripts %}
+{% endblock %}
+</body>
+</html>

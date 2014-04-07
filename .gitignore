@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+
+# Django
+*.db
+*.sqlite3
+*.log
+*.pot
+
+# PyCharm
+.idea/
+
+# Temp files
+*.*~
+*.kate-swp
+
+# secret stuff
+secret.json
+plus/
